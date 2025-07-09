@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de Usuario | Cacique Bibliotecary</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">📚 Cacique Bibliotecary</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="panel.html">Mi Panel</a>
+        <a href="login.html">Acceso</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PANEL DE USUARIO -->
+  <section class="user-panel">
+    <div class="container">
+      <h2 id="user-greeting">Mi Panel de Biblioteca</h2>
+      <p id="user-role"></p>
+      <p>Administra tus libros prestados y tu historial de lectura.</p>
+      <button id="logout-btn">Cerrar sesión</button>
+      <div id="panel-estudiante" style="display: none;">
+      <h3>📘 Vista para Estudiantes</h3>
+      <p>Accede a tus libros y revisa tus fechas de devolución.</p>
+    </div>
+
+    <div id="panel-profesor" style="display: none;">
+      <h3>📙 Vista para Profesores</h3>
+      <p>Visualiza materiales recomendados y reserva de ejemplares.</p>
+    </div>
+
+    <div id="panel-bibliotecario" style="display: none;">
+      <h3>📗 Vista para Bibliotecarios</h3>
+      <p>Administra préstamos, usuarios y catálogo.</p>
+      <a href="admin.html">Ir a Administración</a>
+    </div>
+
+      <div class="panel-overview">
+        <div class="panel-card">
+          <h3>Libros Prestados</h3>
+          <p><strong>3</strong> libros actualmente</p>
+        </div>
+        <div class="panel-card">
+          <h3>Artículos Vencidos</h3>
+          <p><strong>0</strong> artículos vencidos</p>
+        </div>
+        <div class="panel-card">
+          <h3>Renovaciones Disponibles</h3>
+          <p><strong>4</strong> renovaciones restantes</p>
+        </div>
+      </div>
+
+      <h3>Historial de Préstamos</h3>
+      <p id="fecha-acceso"></p>
+      <div id="tabla-prestamos"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Cacique Bibliotecary. Comprometidos con la excelencia académica.</p>
+    </div>
+  </footer>
+  <script src="js/panel.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso | Cacique Bibliotecary</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">📚 Cacique Bibliotecary</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="login.html">Acceso</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- LOGIN/REGISTRO -->
+  <section class="auth">
+    <div class="container">
+      <h2>Acceda a su cuenta</h2>
+      <div class="auth-forms">
+        <!-- LOGIN -->
+        <div class="auth-card">
+          <h3>Iniciar sesión</h3>
+          <form class="login-form">
+            <label for="login-user">Nombre de usuario</label>
+            <input type="text" id="login-user" placeholder="Escribe aquí..." required>
+
+            <label for="login-pass">Contraseña</label>
+            <input type="password" id="login-pass" placeholder="Escribe aquí..." required>
+
+            <button type="submit">Acceso</button>
+          </form>
+        </div>
+
+        <!-- REGISTRO -->
+        <div class="auth-card">
+          <h3>Crear cuenta</h3>
+          <form class="registro-form">
+            <label for="register-user">Nombre de usuario</label>
+            <input type="text" id="register-user" placeholder="Escribe aquí..." required>
+
+            <label for="register-full">Nombre completo</label>
+            <input type="text" id="register-full" placeholder="Escribe aquí..." required>
+
+            <label for="register-pass">Contraseña</label>
+            <input type="password" id="register-pass" placeholder="Escribe aquí..." required>
+
+            <label for="register-role">Rol</label>
+            <select id="register-role" required>
+              <option value="">Seleccione rol</option>
+              <option>Estudiante</option>
+              <option>Profesor</option>
+              <option>Bibliotecario</option>
+            </select>
+
+            <button type="submit">Inscribirse</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Cacique Bibliotecary. Comprometidos con la excelencia académica y los estándares de accesibilidad.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
